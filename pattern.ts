@@ -123,3 +123,45 @@ for(let i = 1 ; i <= n4 ; i++) {
 }
 
 
+console.log("==================================================================")
+
+
+
+//  *
+// ***
+//*****
+// ***
+//  *
+
+let n5 = 5 ;
+
+let sp2 = n5-1;
+let star = 1;
+
+for(let i = 1 ; i <=n5 ; i++){
+    let s ='';
+    //for space
+    for(let j = 1 ; j <= sp2/2 ; j++ ){
+        s+=" ";
+    }
+    //star
+    for(let k = 1 ; k <= star ; k++){
+        s+="*";
+    }
+    //for space
+    for(let x = 1 ; x <= sp2/2 ; x++ ){
+        s+=" ";
+    }
+
+    if(i <= n5/2){
+        sp2-=2;
+        star+=2;
+    }else{
+        sp2+=2;
+        star-=2;
+    }
+
+    console.log(s);
+
+}
+
